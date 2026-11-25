@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#111d22">
+<title>Economic Atlas: see who a number describes</title>
+<meta name="description" content="A map-based tool that takes a claim about the economy and shows who the number describes. Early prototype by one maker, not public yet.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://joshcs.github.io/economic-atlas/">
+<meta property="og:title" content="Economic Atlas: see who a number describes">
+<meta property="og:description" content="Economic Atlas takes a question about the economy and shows who the number describes.">
+<meta property="og:image" content="https://joshcs.github.io/economic-atlas/assets/share.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="The words: See who a number describes. Economic Atlas, an early prototype.">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preload" href="assets/BarlowCondensed-SemiBold.ttf" as="font" type="font/ttf" crossorigin>
+<link rel="preload" href="assets/Barlow-Regular.ttf" as="font" type="font/ttf" crossorigin>
+<link rel="stylesheet" href="landing.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="top">
+  <div class="wrap top-row">
+    <p class="brand">Economic Atlas</p>
+    <nav aria-label="Sections">
+      <ul>
+        <li><a href="#ask">What you can ask</a></li>
+        <li><a href="#looks">What it looks like</a></li>
+        <li><a href="#status">Project status</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+<section class="hero" aria-labelledby="h-hero">
+  <div class="wrap">
+    <h1 id="h-hero">See who a number describes</h1>
+    <p class="measure">Economic Atlas is a map-based tool for checking a claim about the economy. You start with a question or a news claim. It shows which people the number counts. You can then see how it changes by income, age and place. It also says what the data can't tell you.</p>
+    <p class="small status">Early prototype · Not public yet · Nothing to try</p>
+    <figure class="hero-shot">
+      <picture>
+        <source media="(max-width: 899px)" srcset="assets/opening-panel-1x.webp 560w, assets/opening-panel.webp 1064w" sizes="(max-width: 699px) calc(100vw - 40px), 560px" width="560" height="851">
+        <img src="assets/opening-1440-1x.webp" srcset="assets/opening-1440-1x.webp 1200w, assets/opening-1440.webp 2400w" sizes="(min-width: 1280px) 1200px, calc(100vw - 96px)" width="1200" height="750" fetchpriority="high" alt="The Economic Atlas opening screen at desktop width. A map of the United States with three cards: week of meals $75, weekly income $1,495 and food share 5.0%. Beside the map, the question What does a week of groceries cost here? and its answer.">
+      </picture>
+      <figcaption>The opening view compares a week of meals with a week of income.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section id="ask" aria-labelledby="h-ask">
+  <div class="wrap">
+    <h2 id="h-ask" class="before-group">What you can ask</h2>
+    <div class="cols ruled-grid">
+      <div class="ruled">
+        <h3>Who does this number describe?</h3>
+        <p>In 2025, 21.5% of U.S. adults aged 25 to 34 shared a household with a parent. Economic Atlas worked that out from the Census Bureau's Current Population Survey. Count only those living in a parent's home, and the Census Bureau's published counts work out to about 16.4%. The two figures count different people.</p>
+      </div>
+      <div class="ruled">
+        <h3>What about people who earn less?</h3>
+        <p>Take rent in one county. Switch from all renters to households with income under $50,000. The worked case below shows the change.</p>
+      </div>
+      <div class="ruled">
+        <h3>What about where I live?</h3>
+        <p>From January 2019 to October 2026, grocery prices for U.S. urban shoppers rose 33.8%. Average hourly pay in private-sector jobs rose 36.8%. Both figures come from the Bureau of Labor Statistics. Pin a county in a state or D.C. and you get one of 23 metro grocery figures, or the figure for its group of states.</p>
+      </div>
+      <div class="ruled">
+        <h3>What can't this number tell me?</h3>
+        <p>Take U.S. families headed by someone aged 30 to 39, in the Federal Reserve's Survey of Consumer Finances. The middle family's net worth was about $61,000 in 1992 and about $84,000 in 2025, in 2025 dollars. About 77% of the growth in average net worth came from the wealthiest tenth of those families. The two surveys asked different families, so this can't tell you how many individual families gained.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="looks" aria-labelledby="h-looks">
+  <div class="wrap">
+    <h2 id="h-looks" class="before-group">Here's what it looks like</h2>
+    <div class="shots">
+      <figure>
+        <div class="cols pair">
+          <img src="assets/rent-all-pair-1x.webp" srcset="assets/rent-all-pair-1x.webp 560w, assets/rent-all-pair.webp 1064w" sizes="(min-width: 1280px) 560px, (min-width: 900px) calc(50vw - 72px), (max-width: 699px) calc(100vw - 40px), 560px" width="560" height="805" loading="lazy" alt="The rent answer for Mecklenburg County, North Carolina, with all income groups selected. It reads: 49 in 100 eligible renter households spent at least 30% of income on rent and utilities. Bars show the share for five income groups, from 94.9% under $20,000 to 7.8% at $75,000 or more.">
+          <img src="assets/rent-under50k-pair-1x.webp" srcset="assets/rent-under50k-pair-1x.webp 560w, assets/rent-under50k-pair.webp 1064w" sizes="(min-width: 1280px) 560px, (min-width: 900px) calc(50vw - 72px), (max-width: 699px) calc(100vw - 40px), 560px" width="560" height="805" loading="lazy" alt="The same rent answer with Under $50,000 combined selected. It reads: about 91 in 100 spent at least 30% of their income on rent and utilities, about 68,034 households. Below it: across all renters, 46.4% did in 2015 to 2019 and 49.4% did in 2020 to 2024.">
+        </div>
+        <figcaption>The rent answer for Mecklenburg County: all renters, then households with income under $50,000.</figcaption>
+      </figure>
+      <figure>
+        <picture>
+          <source media="(max-width: 899px)" srcset="assets/wealth-same-age-crop-1x.webp 560w, assets/wealth-same-age-crop.webp 1064w" sizes="(max-width: 699px) calc(100vw - 40px), 560px" width="560" height="733">
+          <img src="assets/wealth-same-age-1440-1x.webp" srcset="assets/wealth-same-age-1440-1x.webp 1200w, assets/wealth-same-age-1440.webp 2400w" sizes="(min-width: 1280px) 1200px, calc(100vw - 96px)" width="1200" height="679" loading="lazy" alt="The wealth investigation beside a map of the United States. The question reads How did wealth change for families in their thirties? The family in the middle had $60,919 in 1992 and $83,708 in 2025, in 2025 dollars.">
+        </picture>
+        <figcaption>Net worth of families in their thirties, in 1992 and 2025.</figcaption>
+      </figure>
+      <div class="cols pair-figs">
+        <figure>
+          <picture>
+            <source media="(max-width: 899px)" srcset="assets/county-zoom-detail-1x.webp 560w, assets/county-zoom-detail.webp 858w" sizes="(max-width: 699px) calc(100vw - 40px), 560px" width="560" height="487">
+            <img src="assets/county-zoom-map-1x.webp" srcset="assets/county-zoom-map-1x.webp 560w, assets/county-zoom-map.webp 1120w" sizes="(min-width: 1280px) 560px, (min-width: 900px) calc(50vw - 72px), (max-width: 699px) calc(100vw - 40px), 560px" width="560" height="387" loading="lazy" alt="A close map view of Buncombe County, North Carolina, coloured by median household income, $78,993. It shows the names of nearby counties and of towns such as Woodfin, Black Mountain and Fletcher, with highways as thin lines.">
+          </picture>
+          <figcaption>Zoom into a county and the map adds county names, city names and highways.</figcaption>
+        </figure>
+        <figure>
+          <img src="assets/find-question-panel-1x.webp" srcset="assets/find-question-panel-1x.webp 560w, assets/find-question-panel.webp 1064w" sizes="(min-width: 1280px) 560px, (min-width: 900px) calc(50vw - 72px), (max-width: 699px) calc(100vw - 40px), 560px" width="560" height="387" loading="lazy" alt="The question guide, headed What are you trying to understand? Did paychecks keep up with groceries? is typed in the box. Below it are four suggested questions, the first being Did earnings here keep up with rising prices?">
+          <figcaption>Type a headline or question. It suggests topics the Atlas already covers.</figcaption>
+        </figure>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section aria-labelledby="h-case">
+  <div class="wrap case">
+    <div class="case-a">
+      <h2 id="h-case">Suppose you rent in Mecklenburg County, North Carolina.</h2>
+      <p>Start with all renters, in the Census Bureau's American Community Survey for 2020 to 2024. Of 200,234 renter households with cash rent and income above zero, 99,003 spent at least 30% of income on rent and utilities. That's about <span class="fig">49%</span>.</p>
+      <p>Now switch to renter households with income under $50,000. For them it was 68,034 of 74,632, about <span class="fig">91%</span>. That is 41.72 points higher, with a 90% margin of error of plus or minus 1.21 points.</p>
+    </div>
+    <figure class="case-fig">
+      <img src="assets/source-receipt-1x.webp" srcset="assets/source-receipt-1x.webp 560w, assets/source-receipt.webp 1064w" sizes="(min-width: 1280px) 560px, (min-width: 900px) calc(50vw - 72px), (max-width: 699px) calc(100vw - 40px), 560px" width="560" height="429" loading="lazy" alt="The source receipt for the under $50,000 rent figure, opened under Where does this number come from? It reads: about 68,034 of 74,632 eligible households, an estimate of 91.16% with a 90% margin of plus or minus 1.03 percentage points, and 41.72 points above the rate for all eligible renters, margin 1.21. It says who is counted and how the margin is worked out, and links to Census table B25106 and a JSON download.">
+      <figcaption>Where a number comes from: the counts, the margin of error and the Census table.</figcaption>
+    </figure>
+    <div class="case-b">
+      <h3 class="sub">What these figures can't tell you</h3>
+      <p>These are survey estimates of households, and the second group is part of the first. The 200,234 leaves out about 4,300 renter households with zero or negative income and about 4,800 paying no cash rent. The survey doesn't say why rent takes that share, or describe any one household.</p>
+    </div>
+  </div>
+</section>
+
+<div class="band">
+  <section aria-labelledby="h-why">
+    <div class="wrap">
+      <h2 id="h-why">Why I'm building this</h2>
+      <div class="measure">
+        <p>The economy is usually explained in averages, but people don't live in averages. I hear that inflation is cooling, or that millennials are wealthier than boomers were at the same age. I want to know what that means for people like me.</p>
+        <p>To check that myself, I'd have to know what to look up and how each survey works. I don't think you should have to become an economist first.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="status" aria-labelledby="h-status">
+    <div class="wrap">
+      <h2 id="h-status">About the pre-beta</h2>
+      <div class="measure">
+        <p>Economic Atlas is a working prototype that runs on my own computer. It isn't public, and there's nothing to download or try.</p>
+      </div>
+      <div class="cols lists">
+        <div>
+          <h3>What was checked on 23 November</h3>
+          <ul>
+            <li>None of the 126 source files then on the project's list had changed since they were recorded.</li>
+            <li>Twelve data files rebuilt from those sources exactly matched the copies the app uses.</li>
+            <li>For eleven of 24 test questions, a separate calculation from the source files matched the Atlas's numbers.</li>
+          </ul>
+        </div>
+        <div>
+          <h3>What isn't done yet</h3>
+          <ul>
+            <li>Nobody has tested whether readers understand the answers.</li>
+            <li>I update the sources by hand.</li>
+            <li>One income figure I rebuilt differs slightly from the published one, and I don't know why.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<section aria-labelledby="h-faq">
+  <div class="wrap">
+    <h2 id="h-faq" class="before-group">Questions about the project</h2>
+    <div class="cols ruled-grid">
+      <div class="ruled">
+        <h3>Is this an AI chatbot?</h3>
+        <p>No. The numbers come from public data tables and calculations. No outside reviewer has checked them yet. An optional AI model in the browser can only suggest a topic the Atlas already covers, and only when you ask.</p>
+      </div>
+      <div class="ruled">
+        <h3>Where do the numbers come from?</h3>
+        <p>From the Census Bureau, the Bureau of Labor Statistics, the Federal Reserve and the Bureau of Economic Analysis. Also from the Urban Institute and other published research. Each answer has a panel you can open. It shows the figures and names the source.</p>
+      </div>
+      <div class="ruled">
+        <h3>What can't it tell me?</h3>
+        <p>It can't tell you why a number changed. Some questions only have national data, so the answer stays national.</p>
+      </div>
+      <div class="ruled">
+        <h3>Does it cover my county?</h3>
+        <p>The rent figures cover 3,222 counties and similar areas in the Census Bureau's 2020 to 2024 survey. The map hides a figure when its 90% margin of error is wider than ten points. For all renters, that happens in about a third of counties.</p>
+      </div>
+      <div class="ruled">
+        <h3>Who makes it?</h3>
+        <p>I do. I'm Josh Cottrell-Schloemer.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap small">
+    <div class="measure">
+      <p>Josh Cottrell-Schloemer</p>
+      <p>Early prototype. Not public yet.</p>
+      <p>Map data: U.S. Census Bureau and Natural Earth.</p>
+      <p>Terrain: Mapzen Terrain Tiles through AWS Open Data, with data courtesy of the U.S. Geological Survey and NOAA.</p>
+      <details>
+        <summary>Full terrain credits</summary>
+        <ul class="credits">
+          <li>ArcticDEM terrain data DEM(s) were created from DigitalGlobe, Inc., imagery and funded under National Science Foundation awards 1043681, 1559691, and 1542736;</li>
+          <li>Australia terrain data © Commonwealth of Australia (Geoscience Australia) 2017;</li>
+          <li>Austria terrain data © offene Daten Österreichs – Digitales Geländemodell (DGM) Österreich;</li>
+          <li>Canada terrain data contains information licensed under the Open Government Licence – Canada;</li>
+          <li>Europe terrain data produced using Copernicus data and information funded by the European Union - EU-DEM layers;</li>
+          <li>Global ETOPO1 terrain data U.S. National Oceanic and Atmospheric Administration</li>
+          <li>Mexico terrain data source: INEGI, Continental relief, 2016;</li>
+          <li>New Zealand terrain data Copyright 2011 Crown copyright (c) Land Information New Zealand and the New Zealand Government (All rights reserved);</li>
+          <li>Norway terrain data © Kartverket;</li>
+          <li>United Kingdom terrain data © Environment Agency copyright and/or database right 2015. All rights reserved;</li>
+          <li>United States 3DEP (formerly NED) and global GMTED2010 and SRTM terrain data courtesy of the U.S. Geological Survey.</li>
+        </ul>
+      </details>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
